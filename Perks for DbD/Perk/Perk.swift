@@ -6,21 +6,26 @@
 //  Copyright © 2020 Plekhanov University. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Perk {
+    
+    var name: String
+    
+    var image: UIImage
+    var description: String?
     
     var type: PerkType
     var tiers: [PerkTier]
     
     var isForSurvivor: Bool{
         didSet {
-            isForKiller = !isForSurvivour
+            isForKiller = !isForSurvivor
         }
     }
     var isForKiller: Bool {
         didSet {
-            isForSurvivour = !isForKiller
+            isForSurvivor = !isForKiller
         }
     }
 }

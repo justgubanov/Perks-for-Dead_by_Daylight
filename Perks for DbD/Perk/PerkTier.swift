@@ -13,4 +13,15 @@ enum PerkTier {
     case tierOne(_ rarity: PerkRarity)
     case tierTwo(_ rarity: PerkRarity)
     case tierThree(_ rarity: PerkRarity)
+    
+    var rarity: PerkRarity {
+        switch self {
+        case let .tierOne(rarity):
+            return rarity
+        case let .tierTwo(rarity):
+            return rarity
+        case let .tierThree(rarity):
+            return rarity
+        }
+    }
 }
