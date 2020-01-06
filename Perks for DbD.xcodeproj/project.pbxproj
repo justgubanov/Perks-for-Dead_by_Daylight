@@ -16,6 +16,16 @@
 		FA46327623412F0000C578DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA46327423412F0000C578DD /* LaunchScreen.storyboard */; };
 		FA46328123412F0000C578DD /* Perks_for_DbDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46328023412F0000C578DD /* Perks_for_DbDTests.swift */; };
 		FA46328C23412F0000C578DD /* Perks_for_DbDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46328B23412F0000C578DD /* Perks_for_DbDUITests.swift */; };
+		FAD839DD23C36DC100E6E589 /* Perk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839DC23C36DC100E6E589 /* Perk.swift */; };
+		FAD839DF23C36E1200E6E589 /* PerkType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839DE23C36E1200E6E589 /* PerkType.swift */; };
+		FAD839E123C36FA600E6E589 /* PerkTier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839E023C36FA600E6E589 /* PerkTier.swift */; };
+		FAD839E323C3703900E6E589 /* PerkRarity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839E223C3703900E6E589 /* PerkRarity.swift */; };
+		FAD839E623C371C800E6E589 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839E523C371C800E6E589 /* Character.swift */; };
+		FAD839E823C372BD00E6E589 /* CharacterPerk.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839E723C372BD00E6E589 /* CharacterPerk.swift */; };
+		FAD839EA23C375F700E6E589 /* Killer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839E923C375F700E6E589 /* Killer.swift */; };
+		FAD839EC23C3768000E6E589 /* Survivor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839EB23C3768000E6E589 /* Survivor.swift */; };
+		FAD839F023C37F8C00E6E589 /* PerkSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839EF23C37F8C00E6E589 /* PerkSet.swift */; };
+		FAD839F923C3875D00E6E589 /* KillerAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD839F823C3875D00E6E589 /* KillerAbility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +61,16 @@
 		FA46328723412F0000C578DD /* Perks for DbDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Perks for DbDUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA46328B23412F0000C578DD /* Perks_for_DbDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perks_for_DbDUITests.swift; sourceTree = "<group>"; };
 		FA46328D23412F0000C578DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD839DC23C36DC100E6E589 /* Perk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perk.swift; sourceTree = "<group>"; };
+		FAD839DE23C36E1200E6E589 /* PerkType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkType.swift; sourceTree = "<group>"; };
+		FAD839E023C36FA600E6E589 /* PerkTier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkTier.swift; sourceTree = "<group>"; };
+		FAD839E223C3703900E6E589 /* PerkRarity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkRarity.swift; sourceTree = "<group>"; };
+		FAD839E523C371C800E6E589 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		FAD839E723C372BD00E6E589 /* CharacterPerk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPerk.swift; sourceTree = "<group>"; };
+		FAD839E923C375F700E6E589 /* Killer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Killer.swift; sourceTree = "<group>"; };
+		FAD839EB23C3768000E6E589 /* Survivor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survivor.swift; sourceTree = "<group>"; };
+		FAD839EF23C37F8C00E6E589 /* PerkSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkSet.swift; sourceTree = "<group>"; };
+		FAD839F823C3875D00E6E589 /* KillerAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KillerAbility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +125,9 @@
 				FA46326823412EF700C578DD /* SceneDelegate.swift */,
 				FA46326D23412EF700C578DD /* ContentView.swift */,
 				FA46326F23412F0000C578DD /* Assets.xcassets */,
+				FAD839ED23C37F5B00E6E589 /* PerkSet */,
+				FAD839E423C3718800E6E589 /* Character */,
+				FAD839DB23C36D8C00E6E589 /* Perk */,
 				FA46327423412F0000C578DD /* LaunchScreen.storyboard */,
 				FA46327723412F0000C578DD /* Info.plist */,
 				FA46326A23412EF700C578DD /* Perks_for_DbD.xcdatamodeld */,
@@ -137,6 +160,37 @@
 				FA46328D23412F0000C578DD /* Info.plist */,
 			);
 			path = "Perks for DbDUITests";
+			sourceTree = "<group>";
+		};
+		FAD839DB23C36D8C00E6E589 /* Perk */ = {
+			isa = PBXGroup;
+			children = (
+				FAD839DC23C36DC100E6E589 /* Perk.swift */,
+				FAD839DE23C36E1200E6E589 /* PerkType.swift */,
+				FAD839E023C36FA600E6E589 /* PerkTier.swift */,
+				FAD839E223C3703900E6E589 /* PerkRarity.swift */,
+			);
+			path = Perk;
+			sourceTree = "<group>";
+		};
+		FAD839E423C3718800E6E589 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				FAD839E523C371C800E6E589 /* Character.swift */,
+				FAD839E723C372BD00E6E589 /* CharacterPerk.swift */,
+				FAD839EB23C3768000E6E589 /* Survivor.swift */,
+				FAD839E923C375F700E6E589 /* Killer.swift */,
+				FAD839F823C3875D00E6E589 /* KillerAbility.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
+		FAD839ED23C37F5B00E6E589 /* PerkSet */ = {
+			isa = PBXGroup;
+			children = (
+				FAD839EF23C37F8C00E6E589 /* PerkSet.swift */,
+			);
+			path = PerkSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +324,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD839E623C371C800E6E589 /* Character.swift in Sources */,
+				FAD839E323C3703900E6E589 /* PerkRarity.swift in Sources */,
+				FAD839F023C37F8C00E6E589 /* PerkSet.swift in Sources */,
 				FA46326723412EF700C578DD /* AppDelegate.swift in Sources */,
+				FAD839E823C372BD00E6E589 /* CharacterPerk.swift in Sources */,
+				FAD839DF23C36E1200E6E589 /* PerkType.swift in Sources */,
 				FA46326C23412EF700C578DD /* Perks_for_DbD.xcdatamodeld in Sources */,
 				FA46326E23412EF700C578DD /* ContentView.swift in Sources */,
+				FAD839EC23C3768000E6E589 /* Survivor.swift in Sources */,
+				FAD839E123C36FA600E6E589 /* PerkTier.swift in Sources */,
+				FAD839DD23C36DC100E6E589 /* Perk.swift in Sources */,
 				FA46326923412EF700C578DD /* SceneDelegate.swift in Sources */,
+				FAD839EA23C375F700E6E589 /* Killer.swift in Sources */,
+				FAD839F923C3875D00E6E589 /* KillerAbility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
