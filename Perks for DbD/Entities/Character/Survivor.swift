@@ -12,8 +12,8 @@ struct Survivor: Character {
 
     var name: String
     
-    var description: String?
+    var story: String?
     var image: UIImage?
     
-    var ovnedPerks: [CharacterPerk] = []
+    var perksConfiguration: [PerkConfiguration] = []
 }

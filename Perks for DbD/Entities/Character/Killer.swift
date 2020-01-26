@@ -13,9 +13,9 @@ struct Killer: Character {
     var name: String
     var nickname: String?
     
-    var description: String?
+    var story: String?
     var image: UIImage?
     
     var ability: KillerAbility
-    var ovnedPerks: [CharacterPerk] = []
+    var perksConfiguration: [PerkConfiguration] = []
 }

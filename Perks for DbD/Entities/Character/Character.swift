@@ -12,8 +12,8 @@ protocol Character {
     
     var name: String { get }
     
-    var description: String? { get }
     var image: UIImage? { get }
+    var story: String? { get }
     
-    var ovnedPerks: [CharacterPerk] { get }
+    var perksConfiguration: [PerkConfiguration] { get }
 }

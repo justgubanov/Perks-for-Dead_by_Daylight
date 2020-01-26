@@ -1,5 +1,5 @@
 //
-//  PerkRarity.swift
+//  PerkRarities.swift
 //  Perks for DbD
 //
 //  Created by Александр Губанов on 06.01.2020.
@@ -14,4 +14,11 @@ enum PerkRarity {
     case rare
     case veryRare
     case ultraRare
+}
+
+struct PerkTierRarities: Hashable {
+    
+    var onTierOne: PerkRarity
+    var onTierTwo: PerkRarity
+    var onTierThree: PerkRarity
 }
