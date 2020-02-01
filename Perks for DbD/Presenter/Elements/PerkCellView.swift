@@ -38,21 +38,10 @@ struct PerkCellView: View {
 
 struct PerkCell_Previews: PreviewProvider {
     static var previews: some View {
-        let perkToPresent = Perk(name: "Hope",
-                                 type: .survivor,
-                                 category: .basic,
-                                 
-                                 image: UIImage(named: "perkIcon_hope")!,
-                                 description: "",
-                                 
-                                 rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                            onTierTwo: .rare,
-                                                            onTierThree: .veryRare))
-        
-        let characterPerk = PerkConfiguration(perk: perkToPresent,
+        let hopeTierThree = PerkConfiguration(perkKeyName: PerkKeyName.hope.rawValue,
                                               tier: .tierThree)
         
-        return PerkCellView(configuration: characterPerk)
+        return PerkCellView(configuration: hopeTierThree)
             .frame(width: 500, height: 250)
             .background(Color(.gray))
     }

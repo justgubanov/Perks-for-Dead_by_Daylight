@@ -16,10 +16,18 @@ enum PerkTier: Int {
 }
 
 struct PerkConfiguration {
+    
+    private(set) var perkKeyName: String
+    private(set) var characterKeyName = "David"
 
-    private(set) var perk: Perk
     private(set) var tier: PerkTier?
     
+    var perk: Perk {
+        guard let keyName = PerkKeyName(rawValue: perkKeyName) else {
+            return PerkKeeper.getPerk(withKeyName: .hope)
+        }
+        return PerkKeeper.getPerk(withKeyName: keyName)
+    }
     var isOwned: Bool {
         return tier != nil
     }

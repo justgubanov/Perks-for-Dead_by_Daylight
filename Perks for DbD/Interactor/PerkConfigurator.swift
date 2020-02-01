@@ -26,7 +26,7 @@ class PerkConfigurator {
             assertionFailure("There is unknowned tier 0_o")
         }
         
-        let newCofiguration = PerkConfiguration(perk: currentConfiguration.perk,
+        let newCofiguration = PerkConfiguration(perkKeyName: currentConfiguration.perkKeyName,
                                                 tier: newTier)
         return newCofiguration
     }

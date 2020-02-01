@@ -31,6 +31,8 @@ enum PerkType {
 
 struct Perk {
     
+    var keyName: String
+    
     var name: String
     var type: PerkType
     var category: PerkCategory

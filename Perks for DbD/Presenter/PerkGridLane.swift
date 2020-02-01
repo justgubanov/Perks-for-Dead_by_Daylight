@@ -35,53 +35,11 @@ struct PerkGridLane: View {
 
 struct PerkGridLane_Previews: PreviewProvider {
     static var previews: some View {
-        
-        let hopePerk = Perk(name: "Hope",
-                            type: .survivor,
-                            category: .basic,
-                            
-                            image: UIImage(named: "perkIcon_hope")!,
-                            description: "",
-                            
-                            rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                       onTierTwo: .rare,
-                                                       onTierThree: .veryRare))
-        let kindredPerk = Perk(name: "Kindred",
-                               type: .survivor,
-                               category: .basic,
-                               
-                               image: UIImage(named: "perkIcon_kindred")!,
-                               description: "",
-                               
-                               rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                          onTierTwo: .rare,
-                                                          onTierThree: .veryRare))
-        let dejaVuPerk = Perk(name: "Deja Vu",
-                              type: .survivor,
-                              category: .basic,
-                              
-                              image: UIImage(named: "perkIcon_dejaVu")!,
-                              description: "",
-                              
-                              rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                         onTierTwo: .rare,
-                                                         onTierThree: .veryRare))
-        let noOneLeftBehindPerk = Perk(name: "No one left behind",
-                                       type: .survivor,
-                                       category: .basic,
-                                       
-                                       image: UIImage(named: "perkIcon_noOneLeftBehind")!,
-                                       description: "",
-                                       
-                                       rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                                  onTierTwo: .rare,
-                                                                  onTierThree: .veryRare))
-        
         let perkConfigurations = [
-            PerkConfiguration(perk: hopePerk, tier: .tierOne),
-            PerkConfiguration(perk: kindredPerk, tier: .tierOne),
-            PerkConfiguration(perk: noOneLeftBehindPerk, tier: .tierThree),
-            PerkConfiguration(perk: dejaVuPerk, tier: .tierTwo),
+            PerkConfiguration(perkKeyName: PerkKeyName.hope.rawValue, tier: .tierOne),
+            PerkConfiguration(perkKeyName: PerkKeyName.kindred.rawValue, tier: .tierOne),
+            PerkConfiguration(perkKeyName: PerkKeyName.noOneLeftBehind.rawValue, tier: .tierThree),
+            PerkConfiguration(perkKeyName: PerkKeyName.dejaVu.rawValue, tier: .tierTwo),
         ]
         
         return PerkGridLane(configurations: perkConfigurations, spacerSize: 36)

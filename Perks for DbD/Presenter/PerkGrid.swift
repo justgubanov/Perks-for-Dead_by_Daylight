@@ -91,64 +91,13 @@ struct PerkGrid: View {
 
 struct PerkGrid_Previews: PreviewProvider {
     static var previews: some View {
-        let hopePerk = Perk(name: "Hope",
-                            type: .survivor,
-                            category: .basic,
-                            
-                            image: UIImage(named: "perkIcon_hope")!,
-                            description: "",
-                            
-                            rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                       onTierTwo: .rare,
-                                                       onTierThree: .veryRare))
-        let kindredPerk = Perk(name: "Kindred",
-                               type: .survivor,
-                               category: .basic,
-                               
-                               image: UIImage(named: "perkIcon_kindred")!,
-                               description: "",
-                               
-                               rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                          onTierTwo: .rare,
-                                                          onTierThree: .veryRare))
-        let dejaVuPerk = Perk(name: "Deja Vu",
-                              type: .survivor,
-                              category: .basic,
-                              
-                              image: UIImage(named: "perkIcon_dejaVu")!,
-                              description: "",
-                              
-                              rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                         onTierTwo: .rare,
-                                                         onTierThree: .veryRare))
-        let noOneLeftBehindPerk = Perk(name: "No one left behind",
-                                       type: .survivor,
-                                       category: .basic,
-                                       
-                                       image: UIImage(named: "perkIcon_noOneLeftBehind")!,
-                                       description: "",
-                                       
-                                       rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                                  onTierTwo: .rare,
-                                                                  onTierThree: .veryRare))
-        let lightweightPerk = Perk(name: "Lightweight",
-                                       type: .survivor,
-                                       category: .basic,
-                                       
-                                       image: UIImage(named: "perkIcon_lightweight")!,
-                                       description: "",
-                                       
-                                       rarities: PerkTierRarities(onTierOne: .uncommon,
-                                                                  onTierTwo: .uncommon,
-                                                                  onTierThree: .veryRare))
-        
         let perkConfigurations = [
-            PerkConfiguration(perk: hopePerk, tier: .tierOne),
-            PerkConfiguration(perk: kindredPerk, tier: .tierOne),
-            PerkConfiguration(perk: noOneLeftBehindPerk, tier: .tierThree),
-            PerkConfiguration(perk: dejaVuPerk, tier: .tierTwo),
+            PerkConfiguration(perkKeyName: PerkKeyName.hope.rawValue, tier: .tierOne),
+            PerkConfiguration(perkKeyName: PerkKeyName.kindred.rawValue, tier: .tierOne),
+            PerkConfiguration(perkKeyName: PerkKeyName.noOneLeftBehind.rawValue, tier: .tierThree),
+            PerkConfiguration(perkKeyName: PerkKeyName.dejaVu.rawValue, tier: .tierTwo),
             
-            PerkConfiguration(perk: lightweightPerk, tier: nil),
+            PerkConfiguration(perkKeyName: PerkKeyName.lightweight.rawValue, tier: nil),
         ]
         
         return PerkGrid(configurations: perkConfigurations, placesInFirstLane: 4)
