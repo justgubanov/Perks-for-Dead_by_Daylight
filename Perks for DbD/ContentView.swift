@@ -9,8 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello World")
+        ZStack {
+            Color.init(#colorLiteral(red: 0.07230788513, green: 0.1352939747, blue: 0.3149353526, alpha: 1))
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                HStack {
+                    Text("Perks")
+                        .colorScheme(.dark)
+                    Spacer()
+                }
+                PerkGrid(configurations: getDavidConfigurations(), placesInFirstLane: 4)
+            }
+            .padding(5)
+        }
+    }
+    
+    private func getDavidConfigurations() -> [PerkConfiguration] {
+        return ConfigurationKeeper().getConfigurations()
     }
 }
 

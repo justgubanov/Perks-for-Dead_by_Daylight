@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA25189823DC841400A0FC92 /* View+TypeEraser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA25189723DC841400A0FC92 /* View+TypeEraser.swift */; };
+		FA43276623E6C1C300F4659C /* ConfigurationKeeper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43276523E6C1C300F4659C /* ConfigurationKeeper.swift */; };
 		FA46326723412EF700C578DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46326623412EF700C578DD /* AppDelegate.swift */; };
 		FA46326923412EF700C578DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46326823412EF700C578DD /* SceneDelegate.swift */; };
 		FA46326C23412EF700C578DD /* Perks_for_DbD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA46326A23412EF700C578DD /* Perks_for_DbD.xcdatamodeld */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		FA25189723DC841400A0FC92 /* View+TypeEraser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TypeEraser.swift"; sourceTree = "<group>"; };
+		FA43276523E6C1C300F4659C /* ConfigurationKeeper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationKeeper.swift; sourceTree = "<group>"; };
 		FA46326323412EF700C578DD /* Perks for DbD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Perks for DbD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA46326623412EF700C578DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA46326823412EF700C578DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				FA501E8223D38AF100A18171 /* PerkBackgroundImageFactory.swift */,
 				FA501E8423D4776000A18171 /* PerkTierImageFactory.swift */,
 				FAD921D323E5963400CB7361 /* PerkKeeper.swift */,
+				FA43276523E6C1C300F4659C /* ConfigurationKeeper.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -405,6 +408,7 @@
 				FA46326923412EF700C578DD /* SceneDelegate.swift in Sources */,
 				FAD839EA23C375F700E6E589 /* Killer.swift in Sources */,
 				FA25189823DC841400A0FC92 /* View+TypeEraser.swift in Sources */,
+				FA43276623E6C1C300F4659C /* ConfigurationKeeper.swift in Sources */,
 				FAD839F923C3875D00E6E589 /* KillerAbility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

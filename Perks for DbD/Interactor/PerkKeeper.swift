@@ -96,6 +96,6 @@ extension PerkKeeper {
              
              rarities: PerkTierRarities(onTierOne: .uncommon,
                                         onTierTwo: .uncommon,
-                                        onTierThree: .veryRare))
+                                        onTierThree: .rare))
     }
 }

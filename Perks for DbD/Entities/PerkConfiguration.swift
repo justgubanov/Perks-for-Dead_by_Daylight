@@ -18,7 +18,7 @@ enum PerkTier: Int {
 struct PerkConfiguration {
     
     private(set) var perkKeyName: String
-    private(set) var characterKeyName = "David"
+    private(set) var characterKeyName = "david"
 
     private(set) var tier: PerkTier?
     

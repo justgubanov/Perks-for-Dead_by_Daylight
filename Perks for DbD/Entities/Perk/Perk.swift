@@ -8,6 +8,12 @@
 
 import UIKit
 
+enum PerkType {
+    
+    case killer
+    case survivor
+}
+
 enum PerkCategory: Equatable {
     
     case teachable
@@ -21,12 +27,6 @@ enum PerkCategory: Equatable {
             return false
         }
     }
-}
-
-enum PerkType {
-    
-    case killer
-    case survivor
 }
 
 struct Perk {

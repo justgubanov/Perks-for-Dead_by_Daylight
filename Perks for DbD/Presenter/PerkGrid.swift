@@ -34,7 +34,7 @@ struct PerkGrid: View {
     }
     
     private var rowHeight: CGFloat {
-        return 70
+        return 60
     }
     private var spacerSize: CGFloat {
         return 40
